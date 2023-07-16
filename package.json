@@ -4,8 +4,11 @@
   "license": "MIT",
   "scripts": {},
   "private": true,
-  "dependencies": {},
   "devDependencies": {
+    "@nx/expo": "^16.5.2",
+    "@nx/linter": "^16.5.2",
+    "@nx/nest": "^16.5.2",
+    "@nx/remix": "^16.4.0",
     "@nx/workspace": "16.5.2",
     "nx": "16.5.2",
     "nx-cloud": "latest"
