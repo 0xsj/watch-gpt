@@ -16,6 +16,19 @@ export const App = () => {
   const [whatsNextYCoord, setWhatsNextYCoord] = useState<number>(0);
   const scrollViewRef = useRef<null | ScrollView>(null);
 
+  const fetchHandler = async () => {
+    try {
+      const response = await fetch('http://localhost:3000/api'); // Assuming your Nest app is running on port 3000
+      const data = await response.json();
+
+      // Do something with the data received from the endpoint
+      console.log(data);
+    } catch (error) {
+      // Handle any errors that may occur during the fetch
+      console.error('Error fetching data:', error);
+    }
+  };
+
   return (
     <>
       <StatusBar barStyle="dark-content" />
@@ -56,15 +69,10 @@ export const App = () => {
               </View>
               <TouchableOpacity
                 style={styles.whatsNextButton}
-                onPress={() => {
-                  scrollViewRef.current?.scrollTo({
-                    x: 0,
-                    y: whatsNextYCoord,
-                  });
-                }}
+                onPress={fetchHandler}
               >
                 <Text style={[styles.textMd, styles.textCenter]}>
-                  What's next?
+                  check API
                 </Text>
               </TouchableOpacity>
             </View>

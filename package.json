@@ -2,7 +2,9 @@
   "name": "@nasa-concept/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "serve": "nx serve"
+  },
   "private": true,
   "devDependencies": {
     "@config-plugins/detox": "~5.0.1",
