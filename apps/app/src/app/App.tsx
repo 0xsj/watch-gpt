@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/accessible-emoji */
 import React, { useRef, useState } from 'react';
+import { XStack, YStack } from 'tamagui';
 import {
   SafeAreaView,
   StyleSheet,
@@ -34,7 +35,7 @@ export const App = () => {
       <StatusBar barStyle="dark-content" />
       <SafeAreaView>
         <ScrollView
-          ref={(ref) => {
+          ref={ref => {
             scrollViewRef.current = ref;
           }}
           contentInsetAdjustmentBehavior="automatic"
@@ -46,6 +47,7 @@ export const App = () => {
               Welcome App 👋
             </Text>
           </View>
+
           <View style={styles.section}>
             <View style={styles.hero}>
               <View style={styles.heroTitle}>
@@ -428,7 +430,7 @@ export const App = () => {
           </View>
           <View
             style={styles.section}
-            onLayout={(event) => {
+            onLayout={event => {
               const layout = event.nativeEvent.layout;
               setWhatsNextYCoord(layout.y);
             }}

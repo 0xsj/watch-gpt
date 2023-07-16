@@ -11,7 +11,13 @@
     "react-native-web": "*",
     "@nx/expo": "*",
     "@expo/metro-config": "*",
-    "react": "*"
+    "react": "*",
+    "tamagui": "*",
+    "@tamagui/animations-react-native": "*",
+    "@tamagui/font-inter": "*",
+    "@tamagui/shorthands": "*",
+    "@tamagui/themes": "*",
+    "@tamagui/react-native-media-driver": "*"
   },
   "scripts": {
     "eas-build-pre-install": "cd ../../ && node tools/scripts/eas-build-pre-install.mjs . apps/app && cp package-lock.json apps/app",
