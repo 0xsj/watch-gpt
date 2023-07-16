@@ -13,11 +13,11 @@
     "@nestjs/testing": "^10.0.2",
     "@nx/detox": "16.5.2",
     "@nx/eslint-plugin": "16.5.2",
-    "@nx/expo": "^16.5.2",
+    "@nx/expo": "16.5.2",
     "@nx/jest": "16.5.2",
     "@nx/js": "16.5.2",
-    "@nx/linter": "^16.5.2",
-    "@nx/nest": "^16.5.2",
+    "@nx/linter": "16.5.2",
+    "@nx/nest": "16.5.2",
     "@nx/node": "16.5.2",
     "@nx/remix": "^16.4.0",
     "@nx/webpack": "16.5.2",
@@ -50,7 +50,7 @@
     "metro": "0.74.1",
     "metro-resolver": "0.74.1",
     "nx": "16.5.2",
-    "nx-cloud": "latest",
+    "nx-cloud": "16.1.0",
     "prettier": "^2.6.2",
     "react-test-renderer": "18.2.0",
     "ts-jest": "^29.1.0",
@@ -78,3 +78,4 @@
     "tslib": "^2.3.0"
   }
 }
+
