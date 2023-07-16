@@ -1,29 +1,28 @@
 import { Module } from '@nestjs/common';
 import { ClientsModule, Transport } from '@nestjs/microservices';
-// import { NewsResolver } from './news.resolver';
-import { NewsService } from './news.service';
+import { ArticleService } from './article.service';
 
 @Module({
   imports: [
     ClientsModule.register([
       {
-        name: 'NEWS-SERVICE',
+        name: 'ARTICLE-SERVICE',
         transport: Transport.KAFKA,
         options: {
           client: {
-            clientId: 'news-service',
+            clientId: 'article-service',
             brokers: ['localhost:9092'],
           },
           consumer: {
-            groupId: 'news-service',
+            groupId: 'article-service',
           },
         },
       },
     ]),
   ],
   providers: [
-    NewsService,
+    ArticleService,
     // NewsResolver
   ],
 })
-export class NewsModule {}
+export class ArticleModule {}

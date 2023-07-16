@@ -11,12 +11,12 @@ import { map } from 'rxjs';
 const logger = new Logger();
 
 @Injectable()
-export class NewsService implements OnModuleInit {
+export class ArticleService implements OnModuleInit {
   constructor(
-    @Inject('NEWS-SERVICE') private readonly newsClient: ClientKafka
+    @Inject('ARTICLE-SERVICE') private readonly articleClient: ClientKafka
   ) {}
   onModuleInit() {
-    this.newsClient.subscribeToResponseOf('get_all_news');
+    this.articleClient.subscribeToResponseOf('get_all_articles');
   }
 
   getAll() {
@@ -27,7 +27,7 @@ export class NewsService implements OnModuleInit {
       name: 'buzz',
     };
 
-    return this.newsClient.send('get_all_articles', test).pipe(
+    return this.articleClient.send('get_all_articles', test).pipe(
       map((articles) => {
         logger.log('GATEWAY - Articles retrieved');
 

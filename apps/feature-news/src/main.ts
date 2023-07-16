@@ -13,17 +13,17 @@ async function bootstrap() {
       transport: Transport.KAFKA,
       options: {
         client: {
-          clientId: 'news-service',
+          clientId: 'article-service',
           brokers: ['localhost:9092'],
         },
         consumer: {
-          groupId: 'news-service',
+          groupId: 'article-service',
         },
       },
     }
   );
 
-  logger.log('News-service is listening!');
+  logger.log('article-service is listening!');
   await app.listen();
 }
 
