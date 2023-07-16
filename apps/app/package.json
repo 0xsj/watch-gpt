@@ -17,7 +17,10 @@
     "@tamagui/font-inter": "*",
     "@tamagui/shorthands": "*",
     "@tamagui/themes": "*",
-    "@tamagui/react-native-media-driver": "*"
+    "@tamagui/react-native-media-driver": "*",
+    "expo-status-bar": "*",
+    "expo-font": "*",
+    "@tamagui/theme-base": "*"
   },
   "scripts": {
     "eas-build-pre-install": "cd ../../ && node tools/scripts/eas-build-pre-install.mjs . apps/app && cp package-lock.json apps/app",
