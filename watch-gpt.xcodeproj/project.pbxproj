@@ -128,19 +128,19 @@
 				65705D912AB7A12D006F1A23 /* MessageView.swift */,
 				65705D8C2AB7A0F8006F1A23 /* ParserResult.swift */,
 				65705D932AB7A148006F1A23 /* ResponseParsingTask.swift */,
-				65705D812AB79A3B006F1A23 /* config */,
+				65705D812AB79A3B006F1A23 /* Provider */,
 			);
 			path = shared;
 			sourceTree = "<group>";
 		};
-		65705D812AB79A3B006F1A23 /* config */ = {
+		65705D812AB79A3B006F1A23 /* Provider */ = {
 			isa = PBXGroup;
 			children = (
 				65705D822AB79A55006F1A23 /* Config.swift */,
 				65705D842AB79A72006F1A23 /* Provider.swift */,
 				65705D862AB79A7C006F1A23 /* Client.swift */,
 			);
-			path = config;
+			path = Provider;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

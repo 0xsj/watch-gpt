@@ -31,10 +31,4 @@ class ChatGPTAPI {
             "Authorization": "Bearer \(apiKey)"
         ]
     }
-
-    private func jsonBody(text: String, stream: Bool = true) throws -> Data {
-        // Assuming Request, temperature, and generateMessages are properly defined elsewhere
-        let request = Request(model: model, temperature: temperature, messages: generateMessages(from: text), stream: stream)
-        return try JSONEncoder().encode(request)
-    }
 }
