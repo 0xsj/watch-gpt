@@ -3,8 +3,16 @@ import Foundation
 class ChatGPTAPI {
     private let apiKey: String
     private let urlSession = URLSession.shared
+    private let model: String // Provide an initial value or make it optional if needed
+    private let temperature: Double
+    
+    
+    init(apiKey: String, model: String) {
+        self.apiKey = apiKey
+        self.model = model
+    }
+
     private var urlRequest: URLRequest {
-        
         guard let url = URL(string: "https://api.openai.com/v1/completions") else {
             fatalError("Invalid API URL")
         }
@@ -16,15 +24,17 @@ class ChatGPTAPI {
         
         return urlRequest
     }
-    
+
     private var headers: [String: String] {
         [
             "Content-Type": "application/json",
             "Authorization": "Bearer \(apiKey)"
         ]
     }
-    
-    init(apiKey: String) { // load key on init
-        self.apiKey = apiKey
+
+    private func jsonBody(text: String, stream: Bool = true) throws -> Data {
+        // Assuming Request, temperature, and generateMessages are properly defined elsewhere
+        let request = Request(model: model, temperature: temperature, messages: generateMessages(from: text), stream: stream)
+        return try JSONEncoder().encode(request)
     }
 }
