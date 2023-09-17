@@ -16,6 +16,7 @@
 		65705D832AB79A55006F1A23 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65705D822AB79A55006F1A23 /* Config.swift */; };
 		65705D852AB79A72006F1A23 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65705D842AB79A72006F1A23 /* Provider.swift */; };
 		65705D872AB79A7C006F1A23 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65705D862AB79A7C006F1A23 /* Client.swift */; };
+		65705D892AB79AFB006F1A23 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65705D882AB79AFB006F1A23 /* Types.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		65705D822AB79A55006F1A23 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		65705D842AB79A72006F1A23 /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
 		65705D862AB79A7C006F1A23 /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		65705D882AB79AFB006F1A23 /* Types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				65705D7F2AB795F9006F1A23 /* API.swift */,
+				65705D882AB79AFB006F1A23 /* Types.swift */,
 				65705D812AB79A3B006F1A23 /* config */,
 			);
 			path = shared;
@@ -220,6 +223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65705D892AB79AFB006F1A23 /* Types.swift in Sources */,
 				65705D6F2AB7951C006F1A23 /* ContentView.swift in Sources */,
 				65705D802AB795F9006F1A23 /* API.swift in Sources */,
 				65705D872AB79A7C006F1A23 /* Client.swift in Sources */,
