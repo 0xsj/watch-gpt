@@ -17,6 +17,12 @@
 		65705D852AB79A72006F1A23 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65705D842AB79A72006F1A23 /* Provider.swift */; };
 		65705D872AB79A7C006F1A23 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65705D862AB79A7C006F1A23 /* Client.swift */; };
 		65705D892AB79AFB006F1A23 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65705D882AB79AFB006F1A23 /* Types.swift */; };
+		65705D8B2AB7A08E006F1A23 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65705D8A2AB7A08E006F1A23 /* Loader.swift */; };
+		65705D8D2AB7A0F8006F1A23 /* ParserResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65705D8C2AB7A0F8006F1A23 /* ParserResult.swift */; };
+		65705D8F2AB7A107006F1A23 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65705D8E2AB7A107006F1A23 /* Message.swift */; };
+		65705D922AB7A12D006F1A23 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65705D912AB7A12D006F1A23 /* MessageView.swift */; };
+		65705D942AB7A148006F1A23 /* ResponseParsingTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65705D932AB7A148006F1A23 /* ResponseParsingTask.swift */; };
+		65705D962AB7A19A006F1A23 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65705D952AB7A19A006F1A23 /* Util.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +61,12 @@
 		65705D842AB79A72006F1A23 /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
 		65705D862AB79A7C006F1A23 /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 		65705D882AB79AFB006F1A23 /* Types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
+		65705D8A2AB7A08E006F1A23 /* Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
+		65705D8C2AB7A0F8006F1A23 /* ParserResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParserResult.swift; sourceTree = "<group>"; };
+		65705D8E2AB7A107006F1A23 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		65705D912AB7A12D006F1A23 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		65705D932AB7A148006F1A23 /* ResponseParsingTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseParsingTask.swift; sourceTree = "<group>"; };
+		65705D952AB7A19A006F1A23 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +121,13 @@
 			isa = PBXGroup;
 			children = (
 				65705D7F2AB795F9006F1A23 /* API.swift */,
+				65705D952AB7A19A006F1A23 /* Util.swift */,
+				65705D8A2AB7A08E006F1A23 /* Loader.swift */,
 				65705D882AB79AFB006F1A23 /* Types.swift */,
+				65705D8E2AB7A107006F1A23 /* Message.swift */,
+				65705D912AB7A12D006F1A23 /* MessageView.swift */,
+				65705D8C2AB7A0F8006F1A23 /* ParserResult.swift */,
+				65705D932AB7A148006F1A23 /* ResponseParsingTask.swift */,
 				65705D812AB79A3B006F1A23 /* config */,
 			);
 			path = shared;
@@ -225,10 +243,16 @@
 			files = (
 				65705D892AB79AFB006F1A23 /* Types.swift in Sources */,
 				65705D6F2AB7951C006F1A23 /* ContentView.swift in Sources */,
+				65705D942AB7A148006F1A23 /* ResponseParsingTask.swift in Sources */,
 				65705D802AB795F9006F1A23 /* API.swift in Sources */,
+				65705D8D2AB7A0F8006F1A23 /* ParserResult.swift in Sources */,
+				65705D8F2AB7A107006F1A23 /* Message.swift in Sources */,
 				65705D872AB79A7C006F1A23 /* Client.swift in Sources */,
+				65705D962AB7A19A006F1A23 /* Util.swift in Sources */,
 				65705D832AB79A55006F1A23 /* Config.swift in Sources */,
 				65705D852AB79A72006F1A23 /* Provider.swift in Sources */,
+				65705D8B2AB7A08E006F1A23 /* Loader.swift in Sources */,
+				65705D922AB7A12D006F1A23 /* MessageView.swift in Sources */,
 				65705D6D2AB7951C006F1A23 /* watch_gptApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,9 +1,10 @@
 //
-//  Model.swift
+//  Types.swift
 //  watch-gpt Watch App
 //
 //  Created by Tommy Lee on 9/17/23.
 //
+// Defines reusable types that are used through the application
 
 import Foundation
 
@@ -23,6 +24,11 @@ enum LanguageModel: String, Identifiable, CaseIterable {
     }
 }
 
+enum Temperature: Double { // TODO: double check on this
+    case low = 0.5
+    case medium = 1.0
+    case high = 1.5
+}
 
 struct Message: Codable {
     let role: String
@@ -32,6 +38,7 @@ struct Message: Codable {
 extension Array where Element == Message {
     var contentCount: Int { reduce(0, {$0 + $1.content.count})}
 }
+
 
 struct Request: Codable {
     let model: String
