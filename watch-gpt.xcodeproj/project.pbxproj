@@ -12,6 +12,7 @@
 		65705D6F2AB7951C006F1A23 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65705D6E2AB7951C006F1A23 /* ContentView.swift */; };
 		65705D712AB7951E006F1A23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65705D702AB7951E006F1A23 /* Assets.xcassets */; };
 		65705D742AB7951E006F1A23 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65705D732AB7951E006F1A23 /* Preview Assets.xcassets */; };
+		65705D802AB795F9006F1A23 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65705D7F2AB795F9006F1A23 /* API.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		65705D6E2AB7951C006F1A23 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		65705D702AB7951E006F1A23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65705D732AB7951E006F1A23 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		65705D7F2AB795F9006F1A23 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 		65705D5A2AB7951C006F1A23 = {
 			isa = PBXGroup;
 			children = (
+				65705D7E2AB795DB006F1A23 /* shared */,
 				65705D6B2AB7951C006F1A23 /* watch-gpt Watch App */,
 				65705D622AB7951C006F1A23 /* Products */,
 			);
@@ -92,6 +95,14 @@
 				65705D732AB7951E006F1A23 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		65705D7E2AB795DB006F1A23 /* shared */ = {
+			isa = PBXGroup;
+			children = (
+				65705D7F2AB795F9006F1A23 /* API.swift */,
+			);
+			path = shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				65705D6F2AB7951C006F1A23 /* ContentView.swift in Sources */,
+				65705D802AB795F9006F1A23 /* API.swift in Sources */,
 				65705D6D2AB7951C006F1A23 /* watch_gptApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
