@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum LanguageModel: String, Identifiable, CaseIterable {
+enum Types: String, Identifiable, CaseIterable {
     var id: Self { self }
     
     case gpt3Turbo  = "gpt-3.5-turbo"

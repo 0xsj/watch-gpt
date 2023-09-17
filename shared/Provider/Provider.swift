@@ -6,3 +6,25 @@
 //
 
 import Foundation
+
+enum Provider: Identifiable, CaseIterable {
+case chatGPT
+    
+    var id: Self {self}
+    
+    var text: String {
+        switch self {
+        case .chatGPT:
+            return "OpenAI ChatGPT"
+        default:
+            return "OpenAI ChatGPT"
+        }
+    }
+    
+//    var footerInfo: String {}
+//    
+//    var navigationTitle: String {}
+//    
+//    var imageName: string {}
+    
+}

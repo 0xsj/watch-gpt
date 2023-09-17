@@ -15,16 +15,13 @@ struct Config: Identifiable, Hashable {
        let type: ConfigType
        
        enum ConfigType: Hashable {
-           case chatGPT(ChatGPTModel)
-           case palm
+           case chatGPT(Types) // TODO: probably should rename this
+           
        }
        
-       func createClient() -> LLMClient {
+       func createClient() -> Client {
            switch self.type {
            case .chatGPT(let model):
                return ChatGPTAPI(apiKey: apiKey, model: model.rawValue)
-           case .palm:
-               return PaLMChatAPI(apiKey: apiKey)
-           }
        }
 }

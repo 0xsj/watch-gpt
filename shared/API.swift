@@ -1,6 +1,6 @@
 import Foundation
 
-class ChatGPTAPI {
+class ChatGPTAPI: Client, @unchecked Sendable {
     private let apiKey: String
     private let urlSession = URLSession.shared
     private let model: String // Provide an initial value or make it optional if needed

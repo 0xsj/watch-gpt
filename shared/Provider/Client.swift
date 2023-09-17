@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+protocol Client {
+    var provider: Provider {get}
+    func sendMessage(_text: String) async throws -> String
+    func deleteHistoryList()
+    func sendMessageStream(text: String) async throws -> AsyncThrowingStream<String, Error>
+}
