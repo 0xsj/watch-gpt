@@ -8,7 +8,8 @@
 import Foundation
 
 enum Provider: Identifiable, CaseIterable {
-case chatGPT
+    case chatGPT
+    case default
     
     var id: Self {self}
     
@@ -21,10 +22,32 @@ case chatGPT
         }
     }
     
-//    var footerInfo: String {}
-//    
-//    var navigationTitle: String {}
-//    
-//    var imageName: string {}
+    var footerInfo: String {
+        switch self {
+        case .chatGPT:
+            return "GPT"
+        case default:
+            return "GPT"
+        }
+    }
+//
+    var navigationTitle: String {
+        switch self {
+        case .chatGPT:
+            return "XCA ChatGPT"
+        case default:
+            return "Default"
+        }
+    }
+//
+    var imageName: String {
+        switch self {
+        case .chatGPT
+            return "openai"
+        case default
+            return "default"
+            
+        }
+    }
     
 }
