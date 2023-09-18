@@ -23,5 +23,7 @@ struct Config: Identifiable, Hashable {
            switch self.type {
            case .chatGPT(let model):
                return ChatGPTAPI(apiKey: apiKey, model: model.rawValue)
+           case default:
+               return ChatGPTAPI(apiKey: apiKey, model: model.rawValue)
        }
 }
