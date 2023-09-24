@@ -7,3 +7,11 @@
 
 import Foundation
 import Markdown
+
+actor ResponseParsingTask {
+
+  func parse(text: String) async -> AttributedOutput {
+    let document = Document(parsing:text)
+  }
+
+}
