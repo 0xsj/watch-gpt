@@ -7,10 +7,10 @@
 // Loading dots
 
 import Foundation
+import SwiftUI
 
-// declare static variables circles
-
-// func performAnimation
-
-
-// previews
+struct Loader : View {
+    @State private var showDot1 = false
+    @State private var showDot2 = false 
+    @State private var showDot3 = false
+}
